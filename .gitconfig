@@ -1,3 +1,50 @@
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+  ui = auto
+
+[alias]
+  conf = config --global -e
+	cavm = commit -avm
+  caa = commit -a --amend
+	st = status 
+	pr = pull --rebase
+	br = branch
+	co = checkout
+	ci = commit
+	df = diff
+	ri = rebase -i origin/master
+	lg = log -p
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit
+	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	lfile = log --graph --decorate --pretty=oneline --abbrev-commit --follow 
+  l5 = log --graph --decorate --pretty=oneline --abbrev-commit --all -5
+	l = log --graph --decorate --pretty=oneline --abbrev-commit --all --first-parent
+	ls = ls-files
+	uncommit = reset --soft HEAD^
+	ldiff = log --stat
+	svnup = svn fetch --parent
+	dc = svn dcommit
+	dw = diff --word-diff
+	ru = remote update
+  mergeabort = reset --merge HEAD^
+  puher = push heroku production:master
+[core]
+  editor = /usr/local/bin/vim
+#  pager = vim -
+	excludesfile = /Users/bobz/.gitignore_global
+# [dcff]
+#  external = ~/bin/git_diff_wrapper
+[pager]
+  diff =
+  editor = vim -
+[branch]
+  autosetuprebase=always
 [user]
-	email = dev@bobz.in
 	name = bobz
+	email = bobz@bobz.in
+[github]
+	user = bobz
+	token = 33c4c7401007d431ea096a69dbc9a93f
