@@ -32,7 +32,7 @@
   mergeabort = reset --merge HEAD^
   puher = push heroku production:master
 [core]
-  editor = /usr/local/bin/vim
+  editor = vim
 #  pager = vim -
 	excludesfile = /Users/bobz/.gitignore_global
 # [dcff]
